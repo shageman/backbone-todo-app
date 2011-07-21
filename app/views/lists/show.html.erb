@@ -6,11 +6,6 @@
 </script>
 <div class="title">
   <h1>To-do&apos;s</h1>
-  <p>
-    You can collaborate in realtime on this to-do list by sharing this url:
-    <br />
-    <input type="text" readonly="readonly" value="<%= show_list_path(:token => @list.token, :only_path => false) %>"/>
-  </p>
 </div>
 <div class="content">
   <div id="create-todo">
@@ -21,6 +16,13 @@
     <ul id="todo-list"></ul>
   </div>
   <div id="todo-stats"></div>
+</div>
+<div class="title">
+  <p>
+    You can collaborate in realtime on this to-do list by sharing this url:
+    <br />
+    <input type="text" readonly="readonly" value="<%= show_list_path(:token => @list.token, :only_path => false) %>"/>
+  </p>
 </div>
 
 
